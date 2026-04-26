@@ -93,6 +93,144 @@
 * Es crucial mantener los sistemas actualizados y correctamente configurados.
 * La práctica permitió fortalecer habilidades en análisis de seguridad.
 * Los conocimientos adquiridos son aplicables en entornos reales de ciberseguridad.
+* ## 📊 Resultados de la Práctica
+
+Durante la ejecución del laboratorio de Ethical Hacking en un entorno controlado, se obtuvieron los siguientes resultados:
+
+### 🔍 Escaneo de red
+
+Se realizó un escaneo utilizando la herramienta **Nmap**, logrando identificar un host activo dentro de la red:
+
+* **Host detectado:** 192.168.56.101 (Metasploitable 2)
+
+---
+
+### 🔓 Puertos abiertos detectados
+
+El escaneo reveló múltiples puertos abiertos en el sistema objetivo:
+
+| Puerto | Servicio | Estado  |
+| ------ | -------- | ------- |
+| 21     | FTP      | Abierto |
+| 22     | SSH      | Abierto |
+| 23     | Telnet   | Abierto |
+| 25     | SMTP     | Abierto |
+| 80     | HTTP     | Abierto |
+| 139    | NetBIOS  | Abierto |
+| 445    | SMB      | Abierto |
+
+---
+
+### ⚙️ Servicios y versiones identificadas
+
+Se identificaron servicios vulnerables ejecutándose en el sistema:
+
+* FTP: vsftpd 2.3.4
+* SSH: OpenSSH 4.7p1
+* HTTP: Apache 2.2.8
+* SMB: Samba 3.0.20
+
+---
+
+### ⚠️ Vulnerabilidades detectadas
+
+Durante el análisis se identificaron vulnerabilidades conocidas:
+
+* Servicio FTP vulnerable (vsftpd 2.3.4 backdoor)
+* Uso de Telnet sin cifrado
+* Versión antigua de Samba con posibles exploits
+* Servicios innecesarios expuestos
+
+---
+
+### 💥 Explotación realizada
+
+Se utilizó **Metasploit Framework** para explotar una vulnerabilidad en el servicio FTP:
+
+* Módulo utilizado: `exploit/unix/ftp/vsftpd_234_backdoor`
+* Resultado: acceso exitoso al sistema
+
+Se obtuvo una sesión tipo shell en el sistema objetivo.
+
+---
+
+### 🖥️ Evidencia de acceso
+
+Una vez comprometido el sistema, se logró:
+
+* Ejecución de comandos básicos (`whoami`, `uname -a`)
+* Navegación por el sistema de archivos
+* Identificación del sistema operativo (Linux vulnerable)
+
+---
+
+### 📸 Evidencias
+
+Durante la práctica se obtuvieron evidencias mediante capturas de pantalla de:
+
+* Resultado del escaneo con Nmap
+* Configuración y ejecución del exploit en Metasploit
+* Acceso exitoso al sistema
+
+---
+
+## 📈 Análisis de Resultados
+
+Los resultados obtenidos evidencian que el sistema objetivo presenta múltiples vulnerabilidades críticas.
+
+### 🔎 Interpretación técnica
+
+* La presencia de múltiples puertos abiertos incrementa la superficie de ataque
+* Los servicios desactualizados representan riesgos significativos
+* El uso de protocolos inseguros (Telnet) facilita la interceptación de datos
+
+---
+
+### ⚠️ Evaluación de vulnerabilidades
+
+Las vulnerabilidades detectadas tienen un impacto alto debido a:
+
+* Posibilidad de acceso no autorizado
+* Ejecución remota de comandos
+* Compromiso total del sistema
+
+---
+
+### 🛡️ Medidas de mitigación
+
+Se recomienda:
+
+* Actualizar servicios a versiones seguras
+* Deshabilitar servicios innecesarios
+* Implementar firewall para restringir accesos
+* Utilizar protocolos seguros (SSH en lugar de Telnet)
+
+---
+
+### ❗ Errores identificados
+
+* Configuración insegura del sistema objetivo
+* Exposición innecesaria de servicios
+* Falta de actualizaciones de seguridad
+
+---
+
+### 💡 Reflexión
+
+La práctica demuestra la importancia de realizar auditorías de seguridad de manera periódica para identificar y corregir vulnerabilidades antes de que puedan ser explotadas.
+
+---
+
+## 📌 Conclusiones
+
+* El Ethical Hacking permite identificar debilidades críticas en sistemas.
+* Las pruebas de penetración son esenciales para mejorar la seguridad.
+* Los sistemas desactualizados representan un alto riesgo.
+* La correcta configuración y monitoreo reduce significativamente las amenazas.
+* La práctica permitió aplicar conocimientos teóricos en un entorno realista.
+
+---
+
 
 ---
 <img width="956" height="527" alt="imagen - 2026-04-25T184813 583" src="https://github.com/user-attachments/assets/d4de7139-6264-446b-950e-9bfa0b9fd937" />
