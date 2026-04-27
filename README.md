@@ -48,6 +48,33 @@ Las pruebas deben realizarse en **entornos controlados** para evitar impactos en
 4. Verificación de conectividad:
    ```bash
    ping <IP_objetivo><img width="956" height="527" alt="imagen - 2026-04-25T184813 583" src="https://github.com/user-attachments/assets/729b69c0-4cd2-4c91-b8b0-94b5af61ac7b" />
+   Resultados
+# Resultados
+Hosts activos detectados.
+Puertos abiertos identificados.
+Servicios y versiones encontradas.
+Vulnerabilidades detectadas.
+Evidencia de explotación.
+Capturas de herramientas utilizadas.
+
+# Análisis de Resultados
+Interpretación técnica del escaneo.
+Evaluación de vulnerabilidades.
+Impacto de seguridad:
+Acceso no autorizado
+Escalada de privilegios
+Medidas de mitigación:
+Actualización de sistemas
+Configuración segura
+Identificación de errores en la práctica.
+Reflexión sobre la importancia de la seguridad.
+
+El Ethical Hacking permite detectar vulnerabilidades antes de ataques reales.
+El Pentesting es clave en auditorías de seguridad.
+Sistemas actualizados reducen riesgos.
+Se comprendió el ciclo completo de un ataque controlado.
+Los conocimientos son aplicables en escenarios reales.
+
 <img width="1683" height="265" alt="imagen - 2026-04-25T184824 330" src="https://github.com/user-attachments/assets/fdc82a30-b389-43c6-b44b-fcfc6a509025" />
 <img width="988" height="715" alt="imagen - 2026-04-25T184824 329" src="https://github.com/user-attachments/assets/f11524da-5114-48db-8eab-13a3d102b34a" />
 <img width="956" height="527" alt="imagen - 2026-04-25T184849 023" src="https://github.com/user-attachments/assets/33370b39-d40d-4a0d-b7fb-c77a3f64746d" />
